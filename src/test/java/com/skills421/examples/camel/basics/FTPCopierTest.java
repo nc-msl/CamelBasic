@@ -58,20 +58,6 @@ public class FTPCopierTest {
     }
 
     @Test
-    public void downloadSFTPDirFromMock() throws Exception {
-        FTPCopier copier = new FTPCopier();
-
-        String host = "localhost";
-        String port = "8001";
-        String remotePath = "";
-        String localPath = "/Users/msl/Desktop";
-        String username = "demo";
-        String password = "password";
-
-        copier.sftpDownload(host, port, remotePath, localPath, username, password);
-    }
-
-    @Test
     public void uploadAndDownloadSFTPDirFromMock() throws Exception {
         FTPCopier copier = new FTPCopier();
 
